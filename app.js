@@ -20,7 +20,7 @@ window.addEventListener('load',()=>{
                     return response.json();
                 })
                 .then(data=>{
-                    console.log(data);
+                    
                     const {temperature , summary,icon } =data.currently;
                     temperatureDegree.textContent=temperature;
                     temperatureDescription.textContent=summary+"\n"+data.daily.summary;
